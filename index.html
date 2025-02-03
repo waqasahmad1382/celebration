@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy Birthday Anum Tariq</title>
+    <style>
+        body {
+            background: url('https://www.w3schools.com/w3images/flowers.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 50px;
+            margin-top: 200px;
+            color: #FFD700;
+        }
+        h2 {
+            font-size: 30px;
+            color: #FF69B4;
+        }
+        .balloon {
+            position: absolute;
+            animation: float 5s infinite ease-in-out;
+        }
+        .balloon:nth-child(1) { top: 100px; left: 20px; animation-delay: 0s; }
+        .balloon:nth-child(2) { top: 120px; left: 120px; animation-delay: 1s; }
+        .balloon:nth-child(3) { top: 150px; left: 220px; animation-delay: 2s; }
+        .balloon:nth-child(4) { top: 180px; left: 300px; animation-delay: 3s; }
+        .balloon:nth-child(5) { top: 200px; left: 400px; animation-delay: 4s; }
+
+        .balloon img {
+            width: 100px;
+            height: 100px;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+        }
+
+        .popup h3 {
+            font-size: 30px;
+        }
+
+        .popup p {
+            font-size: 20px;
+        }
+
+        .popup button {
+            background-color: #FF69B4;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .popup button:hover {
+            background-color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday Anum Tariq!</h1>
+    <h2>The Most Beautiful Girl in the World</h2>
+
+    <div class="balloon">
+        <img src="https://img.icons8.com/color/48/000000/balloon.png" alt="Balloon 1">
+    </div>
+    <div class="balloon">
+        <img src="https://img.icons8.com/color/48/000000/balloon.png" alt="Balloon 2">
+    </div>
+    <div class="balloon">
+        <img src="https://img.icons8.com/color/48/000000/balloon.png" alt="Balloon 3">
+    </div>
+    <div class="balloon">
+        <img src="https://img.icons8.com/color/48/000000/balloon.png" alt="Balloon 4">
+    </div>
+    <div class="balloon">
+        <img src="https://img.icons8.com/color/48/000000/balloon.png" alt="Balloon 5">
+    </div>
+
+    <div class="popup" id="popup">
+        <h3>Special Note for You!</h3>
+        <p>Wishing you the happiest of birthdays, Anum. You are truly beautiful inside and out. May this year bring you endless joy, love, and all the happiness in the world!</p>
+        <button onclick="closePopup()">Close</button>
+    </div>
+
+    <script>
+        // Show the popup after 2 seconds
+        setTimeout(function() {
+            document.getElementById("popup").style.display = "block";
+        }, 2000);
+
+        // Function to close the popup
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
